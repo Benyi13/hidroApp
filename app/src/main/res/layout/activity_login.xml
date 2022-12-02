@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hidroblas"
+        android:transitionName="logoImageTransition"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/bienvenidoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textColor="@color/azul"
+        android:layout_marginTop="28dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:transitionName="bienvenidoTextTransition"/>
+
+    <TextView
+        android:id="@+id/continuarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesion para continuar"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:backgroundTint="#E89E23"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
